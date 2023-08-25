@@ -29,5 +29,5 @@ jobs:
         TAG: ${{github.sha}}
       run: |
         gcloud auth configure-docker us-east1-docker.pkg.dev
-        docker build -t us-east1-docker.pkg.dev/$GOOGLE_PROJECT/pdp-test4/go-user-service:$TAG .
-        docker push us-east1-docker.pkg.dev/$GOOGLE_PROJECT/pdp-test4/go-user-service:$TAG
+        docker build -t us-east1-docker.pkg.dev/$GOOGLE_PROJECT/pdp-test4/go-hello-world:$TAG .
+        docker push us-east1-docker.pkg.dev/$GOOGLE_PROJECT/pdp-test4/go-hello-world:$TAG
